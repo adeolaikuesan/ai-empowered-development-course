@@ -11,7 +11,7 @@ A simple todo application built with vanilla HTML, CSS, and JavaScript. This is 
 
 1. **Clone the repository:**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/RBirkeland/vibe-code-demo
    cd vibe-code-demo
    ```
 

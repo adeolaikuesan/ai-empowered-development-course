@@ -15,5 +15,11 @@
       "mcp__linear-server__create_issue",
       "mcp__linear-server__list_issues"
     ]
-  }
+  },
+    "lsp": {
+      "typescript": {
+        "command": "typescript-language-server",
+        "args": ["--stdio"]
+      }
+    }
 }
