@@ -1,4 +1,11 @@
-# Language Server Protocol (LSP)
+# Module 8: Language Server Protocol (LSP)
+
+## What You'll Learn
+- Understand what LSP is and how it provides semantic code understanding
+- Learn how LSP enhances agent capabilities
+- Configure and use LSP with Claude Code
+
+---
 
 ## What is LSP?
 
@@ -9,19 +16,30 @@ Before: 10 editors × 5 languages = 50 implementations
 After:  10 editors + 5 languages = 15 implementations
 ```
 
+> [!TIP]
+> LSP enables code intelligence across all editors without duplicate implementation work.
+
+---
+
 ## Why It Matters for Agents
 
 Without LSP, agents treat code as text—pattern matching and guessing. With LSP, agents get **semantic understanding**:
 
-**Code intelligence:**
+### Code Intelligence
+
 - Type information and function signatures
 - Definitions and references across files
 - Real-time error detection
 - Safe refactoring (knows exactly what will change)
 
-**The combination:**
-- MCP gives agents access to tools and data
-- LSP gives agents understanding of code
+### The Combination
+
+| Technology | What It Provides |
+|-----------|------------------|
+| **MCP** | Gives agents access to tools and data |
+| **LSP** | Gives agents understanding of code |
+
+---
 
 ## How Agents Use LSP
 
@@ -32,13 +50,33 @@ Without LSP, agents treat code as text—pattern matching and guessing. With LSP
 | Text-based search | Find all references |
 | Risk breaking changes | Know impact before changing |
 
-**Example:** An agent renaming a function. Without LSP, it does a text search-and-replace (might miss things, break code). With LSP, it uses "rename symbol" and updates every reference correctly across all files.
+### Example: Renaming a Function
 
-## Exercise: Explore Code with LSP ⭐⭐⭐
+**Without LSP:** Text search-and-replace (might miss things, break code)
 
-**Goal**: See how language servers provide semantic understanding
+**With LSP:** Uses "rename symbol" and updates every reference correctly across all files
 
-**Steps**:
+---
+
+## Key Takeaways
+
+| Concept | Remember |
+|---------|----------|
+| **LSP Standard** | One language server works with all editors |
+| **Semantic Understanding** | Agents understand code structure, not just text |
+| **Code Intelligence** | Type info, definitions, references, error detection |
+| **MCP + LSP** | Tools/data access + code understanding = powerful agents |
+
+---
+
+## Exercise: Explore Code with LSP
+
+| | |
+|---|---|
+| **Goal** | See how language servers provide semantic understanding |
+| **Concepts** | LSP configuration, semantic analysis, safe refactoring |
+
+### Steps
 
 1. Install TypeScript Language Server
    ```bash
@@ -72,6 +110,17 @@ Without LSP, agents treat code as text—pattern matching and guessing. With LSP
 
 5. Ask Claude to refactor something and observe how it uses LSP to ensure safety
 
-**Success**: Claude provides accurate type information, finds all references correctly, and suggests safe refactorings
+### Acceptance Criteria
+- [ ] TypeScript Language Server is installed
+- [ ] LSP is configured in Claude Code settings
+- [ ] Claude provides accurate type information
+- [ ] Claude finds all references correctly
+- [ ] Claude suggests safe refactorings using LSP
+- [ ] You understand how LSP enhances agent capabilities
 
-**Bonus**: Ask Claude to trace a variable's type through multiple function calls
+> [!NOTE]
+> **Bonus challenge**: Ask Claude to trace a variable's type through multiple function calls
+
+---
+
+← [Previous: QA and Pull Requests](7-qa-and-pull-requests.md) | [Next: Transforming & Structuring Data →](9-transforming-structuring-data.md)

@@ -116,6 +116,9 @@ Task: Implement date picker with date-fns
          Main agent implements with focused context
 ```
 
+**Learn more:**
+- [Context Rot Research](https://research.trychroma.com/context-rot) - Understanding context degradation in AI systems
+
 ---
 
 ## Key Takeaways
