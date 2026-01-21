@@ -1,6 +1,8 @@
-# Todo App
+# Vibe Code Demo
 
-A simple todo application built with vanilla HTML, CSS, and JavaScript. This is a starting point for the Vibe Engineering Bootcamp.
+A small todo application built with vanilla HTML, CSS, and JavaScript designed to test your AI-empowered development skills.
+
+**📚 Course Material:** All bootcamp content, exercises, and learning materials are located in the [Course Material](./Course%20Material/README.md) folder. Start there to begin the AI-Assisted Development Bootcamp.
 
 ## Setup
 
